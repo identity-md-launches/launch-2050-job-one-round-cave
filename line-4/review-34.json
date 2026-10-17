@@ -1,0 +1,35 @@
+{
+  "ancestor_sha256": "98bd1c7fe84800e46110804a6ed5704a8b0f163b64dd187cf89f8c19b6aa7405",
+  "sha256": "6e67d3988aadb47995b9d87d5bed837e28b4b18ff9bcadfcfbd5bacae4c8a54c",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "RGB PNG",
+  "wall": "artifacts/line-4/wall-v15.png",
+  "canonical_wall": "artifacts/line-4/wall.png",
+  "preview": "dist/line-4/34.jpg",
+  "preview_format": "JPEG",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_bytes": 87781,
+  "addition_bounds_inclusive": [
+    1028,
+    803,
+    1115,
+    955
+  ],
+  "changed_pixels": 2156,
+  "pixels_changed_outside_addition": 0,
+  "png_roundtrip_passed": true,
+  "method": "Built-in image editing; selected earth pigment blended onto bare inherited rock, generated background discarded.",
+  "visual_review": "Inspected finished wall and 512px JPEG. New forked ochre twig with red/chalk endpoints occupies bare lower-right rock. All inherited marks, Pepe and both five-digit hands are unchanged. No hands, letters, numbers, captions, logos, signature, watermark, border or frame added.",
+  "unmet_visual_requirements": [
+    "Inherited photographic rock texture is retained to preserve the existing wall."
+  ],
+  "visual_limitations": [
+    "Small worn pigment mark softens at 512px; inherited photographic rock texture retained."
+  ]
+}

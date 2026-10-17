@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "number": 34,
+  "earlier_files_unchanged": 46,
+  "goal_unchanged": true,
+  "scope_passed": true,
+  "size_limits_passed": true,
+  "suites_passed": 14,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "PNG",
+  "wall_bytes": 2921622,
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "JPEG",
+  "preview_bytes": 87781,
+  "sha256": "6e67d3988aadb47995b9d87d5bed837e28b4b18ff9bcadfcfbd5bacae4c8a54c"
+}
