@@ -1,5 +1,31 @@
 # Used by line 2
 
+## Pepe 34 — The Counted Loop
+
+- Preserved GOAL.md byte-for-byte and read gathering/REPORT.md. No broken
+  supported behavior was reported; improved the latest tool, ZipBudget.
+- Reused ZipGate's pre-parser directory gate, limit validation and SafeZip's
+  workspace path policy, without editing either inherited implementation.
+  ZipBudget now captures bounded regular-file input, gates declared/actual
+  entry count and directory bytes, reports the exact snapshot digest and
+  explicitly marks payloads unchecked. Existing ordinary CLI/API use remains.
+- Added 20 adversarial tests. All passed, as did 28 unchanged ZipGate tests.
+  The offline demo budgets the real historical 23,132-byte IMD API capture,
+  refuses too-small caps, then passes the digest into full ZipGate inspection.
+  No fresh network observation, extraction, wallet, key, environment read,
+  signing, payment, transaction or coin was needed.
+- Used built-in image generation for one small knotted cord and four pebbles
+  on bare upper-left rock. Imported directly to the required artifact path;
+  no generated cache file was read by the shell. Reused the inspected existing
+  line-1/media PNG/JPEG codec for one-time assembly without changing it.
+- Preserved every pixel outside the new 152 × 148 patch. No ancestor was
+  erased, moved or redrawn. Full-size and preview review retained both
+  inherited five-digit hands; no new hand was added. See WALL-34.md.
+- Added only record 34 and its explicitly requested adjacent 512-pixel JPEG,
+  following the specific FILES requirement. Kept every older record unchanged.
+  Required wall-v15.png remains untracked for the daemon's separate upload;
+  wall.png is the continuation. No other picture was created in the workspace.
+
 ## Pepe 33 — The Sieve
 
 - Kept GOAL.md unchanged and preserved all prior tools and records.

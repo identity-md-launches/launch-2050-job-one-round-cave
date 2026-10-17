@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/zipbudget/selftest.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_all_truncations (__main__.BudgetTests.test_all_truncations) ... ok\ntest_archive_limit_before_parser (__main__.BudgetTests.test_archive_limit_before_parser) ... ok\ntest_byte_budget_breach (__main__.BudgetTests.test_byte_budget_breach) ... ok\ntest_cli_exit_codes (__main__.BudgetTests.test_cli_exit_codes) ... ok\ntest_digest_and_no_payload_reads (__main__.BudgetTests.test_digest_and_no_payload_reads) ... ok\ntest_directory_limit_before_parser (__main__.BudgetTests.test_directory_limit_before_parser) ... ok\ntest_directory_only_archive_counts_entries (__main__.BudgetTests.test_directory_only_archive_counts_entries) ... ok\ntest_directory_source (__main__.BudgetTests.test_directory_source) ... ok\ntest_does_not_claim_path_validation (__main__.BudgetTests.test_does_not_claim_path_validation) ... ok\ntest_empty (__main__.BudgetTests.test_empty) ... ok\ntest_exact_file_and_byte_budget (__main__.BudgetTests.test_exact_file_and_byte_budget) ... ok\ntest_file_budget_breach (__main__.BudgetTests.test_file_budget_breach) ... ok\ntest_growth_while_reading_is_bounded (__main__.BudgetTests.test_growth_while_reading_is_bounded) ... ok\ntest_invalid_api_limits (__main__.BudgetTests.test_invalid_api_limits) ... ok\ntest_missing_source (__main__.BudgetTests.test_missing_source) ... ok\ntest_path_replacement_uses_snapshot (__main__.BudgetTests.test_path_replacement_uses_snapshot) ... ok\ntest_source_symlink (__main__.BudgetTests.test_source_symlink) ... ok\ntest_trailing_bytes (__main__.BudgetTests.test_trailing_bytes) ... ok\ntest_underreported_entries (__main__.BudgetTests.test_underreported_entries) ... ok\ntest_workspace_confinement (__main__.BudgetTests.test_workspace_confinement) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.347s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/zipbudget/demo.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"source\": \"https://api.imd.fun/openapi.json\",\n  \"historical_capture\": true,\n  \"network_used\": false,\n  \"report\": {\n    \"ok\": true,\n    \"files\": 1,\n    \"bytes\": 23132,\n    \"entries\": [\n      {\n        \"name\": \"docs/imd/openapi.json\",\n        \"bytes\": 23132\n      }\n    ],\n    \"counts_complete\": true,\n    \"archive_sha256\": \"84082ffdbd21ce67c4aeebf4bd2abdd88e5769cd2cbfb8c612148abf696ccdd4\",\n    \"archive_bytes\": 4780,\n    \"preflight\": {\n      \"entries\": 1,\n      \"directory_bytes\": 67,\n      \"zip64\": false\n    },\n    \"content_checked\": false\n  },\n  \"byte_budget_refused\": true,\n  \"directory_refusal\": \"directory byte limit exceeded before ZIP parsing\",\n  \"digest_bound_payload_validation_passed\": true,\n  \"extracted\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/zipgate/selftest.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_ambiguous_comment_refused (__main__.GateTests.test_ambiguous_comment_refused) ... ok\ntest_archive_byte_boundary (__main__.GateTests.test_archive_byte_boundary) ... ok\ntest_bad_local_offset (__main__.GateTests.test_bad_local_offset) ... ok\ntest_cancellation_and_deadline (__main__.GateTests.test_cancellation_and_deadline) ... ok\ntest_cli (__main__.GateTests.test_cli) ... ok\ntest_comments_and_unknown_extra (__main__.GateTests.test_comments_and_unknown_extra) ... ok\ntest_content_corruption_still_checked (__main__.GateTests.test_content_corruption_still_checked) ... ok\ntest_declared_entry_limit (__main__.GateTests.test_declared_entry_limit) ... ok\ntest_digest_rejected_before_parser (__main__.GateTests.test_digest_rejected_before_parser) ... ok\ntest_directory_offset_and_size (__main__.GateTests.test_directory_offset_and_size) ... ok\ntest_directory_signature (__main__.GateTests.test_directory_signature) ... ok\ntest_directory_variable_fields (__main__.GateTests.test_directory_variable_fields) ... ok\ntest_empty_archive (__main__.GateTests.test_empty_archive) ... ok\ntest_exact_directory_boundary (__main__.GateTests.test_exact_directory_boundary) ... ok\ntest_invalid_limits (__main__.GateTests.test_invalid_limits) ... ok\ntest_malformed_extra (__main__.GateTests.test_malformed_extra) ... ok\ntest_multidisk (__main__.GateTests.test_multidisk) ... ok\ntest_path_rejection_still_checked (__main__.GateTests.test_path_rejection_still_checked) ... ok\ntest_replacement_cannot_bypass_gate (__main__.GateTests.test_replacement_cannot_bypass_gate) ... ok\ntest_seeded_many_valid_layouts (__main__.GateTests.test_seeded_many_valid_layouts) ... ok\ntest_sfx_prefix (__main__.GateTests.test_sfx_prefix) ... ok\ntest_spoofed_count_high (__main__.GateTests.test_spoofed_count_high) ... ok\ntest_spoofed_count_low (__main__.GateTests.test_spoofed_count_low) ... ok\ntest_stored_and_deflated_extract (__main__.GateTests.test_stored_and_deflated_extract) ... ok\ntest_trailing_bytes (__main__.GateTests.test_trailing_bytes) ... ok\ntest_truncation_every_offset (__main__.GateTests.test_truncation_every_offset) ... ok\ntest_zip64_locator_hidden_in_member_comment (__main__.GateTests.test_zip64_locator_hidden_in_member_comment) ... ok\ntest_zip64_markers (__main__.GateTests.test_zip64_markers) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 0.228s\n\nOK\n"
+    }
+  ]
+}

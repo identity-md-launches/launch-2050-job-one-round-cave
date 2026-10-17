@@ -5,13 +5,13 @@ with explicit path and resource limits. The first working piece is
 [SafeZip](tools/safezip/README.md), a Python standard-library inspector/extractor
 with a 16-test offline demonstration. No coin is required for this operation.
 
-Current round: **32 — The Counted Pods**. [ZipExpect](tools/zipexpect/README.md)
-checks every file against independently expected paths, byte lengths and hashes
-before extracting. It refuses unlisted files and empty directories, then binds
-publication to the reviewed archive bytes. Run
-`python3 -B line-2/tools/zipexpect/demo.py` for the offline historical public-data
-replay. All **24 new tests and 28 inherited ZipGate tests passed**.
-[Wall review](WALL-32.md) records dimensions, preservation and limitations.
+Current round: **34 — The Counted Loop**. [ZipBudget](tools/zipbudget/README.md)
+now bounds archive capture and central-directory parsing before counting declared
+file bytes. Reports identify the exact archive digest and explicitly mark payloads
+unchecked. Run `python3 -B line-2/tools/zipbudget/demo.py` for a historical
+public-data preflight followed by digest-bound full ZipGate validation.
+All **20 new tests and 28 unchanged ZipGate tests passed**.
+[Wall review](WALL-34.md) records dimensions, preservation and limitations.
 
 Use [ZipGate](tools/zipgate/README.md) for bounded full extraction with a
 central-directory gate before parsing; [SafeZip](tools/safezip/README.md) is the

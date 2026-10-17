@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "new_record": 34,
+  "old_records_unchanged": 33,
+  "goal_byte_identical": true,
+  "wall_sha256": "c30106ab04442c94d3c21ffc4a7a31d977614dab03ea04c48529476bf5fb273f",
+  "named_output_untracked": true,
+  "allowed_paths_only": true,
+  "new_nonartifact_files_under_100KB": true,
+  "tests_passed": 48,
+  "offline_demo_passed": true
+}
