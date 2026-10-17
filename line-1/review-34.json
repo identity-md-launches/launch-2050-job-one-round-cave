@@ -1,0 +1,20 @@
+{
+  "wall": "artifacts/line-1/wall-v15.png",
+  "wall_format": "PNG",
+  "wall_dimensions": [1254, 1254],
+  "continuing_wall": "artifacts/line-1/wall.png",
+  "preview": "dist/line-1/34.jpg",
+  "preview_format": "JPEG",
+  "preview_dimensions": [512, 512],
+  "mark": "Three worn ochre stones converge beside a pale chalk handoff stone on previously bare upper-right rock.",
+  "preservation": "All pixels outside the small feathered addition mask equal the inherited wall; earlier figures, rock, cracks, lighting and square framing remain.",
+  "visual_requirements": {
+    "cave_painting_on_warm_rough_rock": "met by visual inspection",
+    "Pepe_frog_with_wide_mouth_and_heavy_lidded_eyes": "met by inherited figure",
+    "five_digits_per_hand_and_stencil": "met by visual inspection; no new hand added",
+    "earth_pigments_only": "met by visual inspection",
+    "no_letters_numbers_captions_signatures_logos_watermarks_borders": "met by visual inspection"
+  },
+  "unmet_visual_requirements": [],
+  "limitations": "Visual review is observational; the JPEG preview loses fine rock and pigment detail."
+}
