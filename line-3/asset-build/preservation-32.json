@@ -1,0 +1,28 @@
+{
+  "source": "artifacts/line-3/wall-v14.png",
+  "source_sha256": "86f721b579e7c71f9a07b708121ee70d3d78c1e0574877b8c911865ea9968e6a",
+  "generated_sha256": "579a3158f1f937ab6f13c308a3a0d3b53524a182484aed3095af2b9ca62267bc",
+  "output": "artifacts/line-3/wall-v15.png",
+  "output_sha256": "5fddc2105f66b94fbc8db4e07a3848032939245ab1f6c3c5cba6f16a5f469696",
+  "patch_xywh": [
+    82,
+    425,
+    125,
+    70
+  ],
+  "changed_pixels": 3209,
+  "changed_pixels_outside_patch": 0,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "RGB PNG",
+  "png_bytes": 2440592,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "JPEG",
+  "jpeg_bytes": 54281,
+  "method": "Only generated tray pigment blended onto original rock. All pixels outside patch preserved."
+}

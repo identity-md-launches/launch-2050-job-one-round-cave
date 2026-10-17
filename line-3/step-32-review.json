@@ -1,0 +1,54 @@
+{
+  "piece": "RewardCSV",
+  "goal_changed": false,
+  "tool_checks": {
+    "new_suite": "8 tests passed, including 100 seeded round trips, uint256 maximum, tampering, CSV size refusal and CLI integration",
+    "dependency_suite": "8 RewardReceipt tests passed",
+    "demo": "exit 0; 1 ZTO across three illustrative address-free contributors",
+    "network": "No fresh chain query; inherited real historical Ethereum ZTO metadata"
+  },
+  "wall": {
+    "source": "artifacts/line-3/wall-v14.png",
+    "source_sha256": "86f721b579e7c71f9a07b708121ee70d3d78c1e0574877b8c911865ea9968e6a",
+    "generated_sha256": "579a3158f1f937ab6f13c308a3a0d3b53524a182484aed3095af2b9ca62267bc",
+    "output": "artifacts/line-3/wall-v15.png",
+    "output_sha256": "5fddc2105f66b94fbc8db4e07a3848032939245ab1f6c3c5cba6f16a5f469696",
+    "patch_xywh": [
+      82,
+      425,
+      125,
+      70
+    ],
+    "changed_pixels": 3209,
+    "changed_pixels_outside_patch": 0,
+    "png_dimensions": [
+      1254,
+      1254
+    ],
+    "png_format": "RGB PNG",
+    "png_bytes": 2440592,
+    "jpeg_dimensions": [
+      512,
+      512
+    ],
+    "jpeg_format": "JPEG",
+    "jpeg_bytes": 54281,
+    "method": "Only generated tray pigment blended onto original rock. All pixels outside patch preserved."
+  },
+  "visual_review": {
+    "new_mark": "Small charcoal tray with three red ochre pebbles and yellow ochre carrying cords on bare left rock",
+    "preserved": "Both inherited Pepe figures, the visible hand with four fingers and one thumb, all previous marks, rock, cracks, colour, lighting and square framing",
+    "new_hands": 0,
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "Inherited photographic rock texture remains; painting additions are flat earth pigment.",
+      "Fine pigment detail is reduced at 512 pixels.",
+      "Visual review is a local worker inspection, not independent certification."
+    ]
+  },
+  "image_generation": {
+    "tool": "installed mcp image generate_image via imagegen skill",
+    "prompt": "A shallow charcoal-outlined oval tray holding three red ochre pebbles with two short yellow ochre carrying cords, uneven worn thumb-painted earth pigments on sandstone; no writing, hands, borders or other objects.",
+    "method": "Generated motif only; selected pigment composited onto existing wall with inherited PNG codec and JPEG encoder."
+  }
+}
