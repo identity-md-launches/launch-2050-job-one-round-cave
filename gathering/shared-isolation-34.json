@@ -1,0 +1,71 @@
+{
+  "gathering": 34,
+  "check": "isolated shared API Bundle",
+  "network_used": false,
+  "workspace_contains_only": [
+    "shared/api_bundle",
+    "test/scratch"
+  ],
+  "all_passed": true,
+  "tests": 70,
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "shared/api_bundle/selftest.py"
+      ],
+      "exit": 0,
+      "tests": 53,
+      "stderr": "test_approval_still_checks_other_member_crc (__main__.BundleTests.test_approval_still_checks_other_member_crc) ... ok\ntest_approved_archive_digests (__main__.BundleTests.test_approved_archive_digests) ... ok\ntest_auth_alternatives_scope_and_direction (__main__.BundleTests.test_auth_alternatives_scope_and_direction) ... ok\ntest_auth_cli_outcomes_and_limits (__main__.BundleTests.test_auth_cli_outcomes_and_limits) ... ok\ntest_auth_override_and_malformed_same_document (__main__.BundleTests.test_auth_override_and_malformed_same_document) ... ok\ntest_auth_public_capture_through_approved_bundles (__main__.BundleTests.test_auth_public_capture_through_approved_bundles) ... ok\ntest_boundcheck_on_real_api_in_zip (__main__.BundleTests.test_boundcheck_on_real_api_in_zip) ... ok\ntest_break_and_cli_exit (__main__.BundleTests.test_break_and_cli_exit) ... ok\ntest_cli_approved_bounds_and_wrong_digest (__main__.BundleTests.test_cli_approved_bounds_and_wrong_digest) ... ok\ntest_cli_node_budget_and_const_exit (__main__.BundleTests.test_cli_node_budget_and_const_exit) ... ok\ntest_comparison_uses_approved_snapshot_after_replacement (__main__.BundleTests.test_comparison_uses_approved_snapshot_after_replacement) ... ok\ntest_const_change_in_approved_public_api_zip (__main__.BundleTests.test_const_change_in_approved_public_api_zip) ... ok\ntest_cooperative_cancellation_and_budget (__main__.BundleTests.test_cooperative_cancellation_and_budget) ... ok\ntest_crc_refused_even_when_unselected (__main__.BundleTests.test_crc_refused_even_when_unselected) ... ok\ntest_dependency_approved_public_api (__main__.BundleTests.test_dependency_approved_public_api) ... ok\ntest_dependency_limits_and_malformed_cli (__main__.BundleTests.test_dependency_limits_and_malformed_cli) ... ok\ntest_dependency_response_and_version_scope (__main__.BundleTests.test_dependency_response_and_version_scope) ... ok\ntest_dependency_transitive_equivalence_retains_review (__main__.BundleTests.test_dependency_transitive_equivalence_retains_review) ... ok\ntest_directory_budget_applies_to_second_archive_cli (__main__.BundleTests.test_directory_budget_applies_to_second_archive_cli) ... ok\ntest_directory_budget_before_parser_and_exact_boundary (__main__.BundleTests.test_directory_budget_before_parser_and_exact_boundary) ... ok\ntest_directory_count_before_parser (__main__.BundleTests.test_directory_count_before_parser) ... ok\ntest_directory_refuses_trailing_bytes_and_false_count (__main__.BundleTests.test_directory_refuses_trailing_bytes_and_false_count) ... ok\ntest_duplicate_and_case_collision_refused (__main__.BundleTests.test_duplicate_and_case_collision_refused) ... ok\ntest_invalid_directory_budget_before_io (__main__.BundleTests.test_invalid_directory_budget_before_io) ... ok\ntest_invalid_node_budget_refused_before_read (__main__.BundleTests.test_invalid_node_budget_refused_before_read) ... ok\ntest_json_duplicate_and_size_limits (__main__.BundleTests.test_json_duplicate_and_size_limits) ... ok\ntest_malformed_digest (__main__.BundleTests.test_malformed_digest) ... ok\ntest_missing_member_and_symlink (__main__.BundleTests.test_missing_member_and_symlink) ... ok\ntest_multiple_of_break_and_integer_equivalence_in_zip (__main__.BundleTests.test_multiple_of_break_and_integer_equivalence_in_zip) ... ok\ntest_node_budget_checks_unselected_implicit_parents (__main__.BundleTests.test_node_budget_checks_unselected_implicit_parents) ... ok\ntest_oauth_flow_change_through_approved_zip_snapshots (__main__.BundleTests.test_oauth_flow_change_through_approved_zip_snapshots) ... ok\ntest_oauth_mode_rejects_unusable_effective_flow (__main__.BundleTests.test_oauth_mode_rejects_unusable_effective_flow) ... ok\ntest_ratio_limit (__main__.BundleTests.test_ratio_limit) ... ok\ntest_real_imd_capture (__main__.BundleTests.test_real_imd_capture) ... ok\ntest_response_const_removal_and_openapi30_review (__main__.BundleTests.test_response_const_removal_and_openapi30_review) ... ok\ntest_review_exit (__main__.BundleTests.test_review_exit) ... ok\ntest_servers_approved_capture_and_cli (__main__.BundleTests.test_servers_approved_capture_and_cli) ... ok\ntest_servers_finite_coverage_and_open_review (__main__.BundleTests.test_servers_finite_coverage_and_open_review) ... ok\ntest_servers_keeps_oauth_and_archive_checks (__main__.BundleTests.test_servers_keeps_oauth_and_archive_checks) ... ok\ntest_servers_override_and_malformed_effective_declaration (__main__.BundleTests.test_servers_override_and_malformed_effective_declaration) ... ok\ntest_transport_api_key_location_name_and_case (__main__.BundleTests.test_transport_api_key_location_name_and_case) ... ok\ntest_transport_cli_break_invalid_and_retained_review (__main__.BundleTests.test_transport_cli_break_invalid_and_retained_review) ... ok\ntest_transport_limits_refuse_without_partial_report (__main__.BundleTests.test_transport_limits_refuse_without_partial_report) ... ok\ntest_transport_malformed_identical_effective_definition (__main__.BundleTests.test_transport_malformed_identical_effective_definition) ... ok\ntest_transport_public_capture_approved_archives (__main__.BundleTests.test_transport_public_capture_approved_archives) ... ok\ntest_transport_surviving_alternative_and_anonymous_override (__main__.BundleTests.test_transport_surviving_alternative_and_anonymous_override) ... ok\ntest_unchanged_with_inert_executable (__main__.BundleTests.test_unchanged_with_inert_executable) ... ok\ntest_uniqueness_cli_break_review_and_error (__main__.BundleTests.test_uniqueness_cli_break_review_and_error) ... ok\ntest_uniqueness_invalid_boolean (__main__.BundleTests.test_uniqueness_invalid_boolean) ... ok\ntest_uniqueness_on_captured_public_api (__main__.BundleTests.test_uniqueness_on_captured_public_api) ... ok\ntest_uniqueness_response_and_openapi30 (__main__.BundleTests.test_uniqueness_response_and_openapi30) ... ok\ntest_wrong_digest_rejected_before_parsing (__main__.BundleTests.test_wrong_digest_rejected_before_parsing) ... ok\ntest_zip_traversal_refused_even_when_unselected (__main__.BundleTests.test_zip_traversal_refused_even_when_unselected) ... ok\n\n----------------------------------------------------------------------\nRan 53 tests in 5.832s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "shared/api_bundle/parameter_selftest.py"
+      ],
+      "exit": 0,
+      "tests": 8,
+      "stderr": "test_approval_and_directory_gate_precede_analysis (__main__.ParameterBundleTests.test_approval_and_directory_gate_precede_analysis) ... ok\ntest_approved_unchanged_capture_and_no_extraction (__main__.ParameterBundleTests.test_approved_unchanged_capture_and_no_extraction) ... ok\ntest_cli_all_four_exits (__main__.ParameterBundleTests.test_cli_all_four_exits) ... ok\ntest_crc_checks_unselected_file_before_analysis (__main__.ParameterBundleTests.test_crc_checks_unselected_file_before_analysis) ... ok\ntest_defaults_do_not_invent_wire_breakage (__main__.ParameterBundleTests.test_defaults_do_not_invent_wire_breakage) ... ok\ntest_inherited_header_identifier_and_server_findings_survive (__main__.ParameterBundleTests.test_inherited_header_identifier_and_server_findings_survive) ... ok\ntest_invalid_unchanged_parameter_refused (__main__.ParameterBundleTests.test_invalid_unchanged_parameter_refused) ... ok\ntest_wire_change_opt_in_and_exact_location (__main__.ParameterBundleTests.test_wire_change_opt_in_and_exact_location) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.817s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "shared/api_bundle/status_selftest.py"
+      ],
+      "exit": 0,
+      "tests": 9,
+      "stderr": "test_approval_directory_and_crc_precede_status_analysis (__main__.StatusBundleTests.test_approval_directory_and_crc_precede_status_analysis) ... ok\ntest_approved_public_capture_without_extraction (__main__.StatusBundleTests.test_approved_public_capture_without_extraction) ... ok\ntest_cli_all_four_exits_and_combined_flags (__main__.StatusBundleTests.test_cli_all_four_exits_and_combined_flags) ... ok\ntest_default_range_and_removed_override_grouping (__main__.StatusBundleTests.test_default_range_and_removed_override_grouping) ... ok\ntest_explicit_override_is_opt_in_and_keeps_review (__main__.StatusBundleTests.test_explicit_override_is_opt_in_and_keeps_review) ... ok\ntest_local_response_references_and_inherited_findings (__main__.StatusBundleTests.test_local_response_references_and_inherited_findings) ... ok\ntest_response_direction_and_missing_coverage_stay_conservative (__main__.StatusBundleTests.test_response_direction_and_missing_coverage_stay_conservative) ... ok\ntest_status_budget_refuses_whole_comparison (__main__.StatusBundleTests.test_status_budget_refuses_whole_comparison) ... ok\ntest_unchanged_bad_selector_and_remote_reference_refused (__main__.StatusBundleTests.test_unchanged_bad_selector_and_remote_reference_refused) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.897s\n\nOK\n",
+      "stdout": ""
+    }
+  ],
+  "demo": {
+    "command": [
+      "python3",
+      "-B",
+      "shared/api_bundle/status_demo.py"
+    ],
+    "exit": 0,
+    "previous_status": "review_required",
+    "unchanged_status": "no_detected_breakage",
+    "counts": {
+      "breaking": 1,
+      "review": 2,
+      "info": 0
+    },
+    "selector_groups": [
+      {
+        "operation": "/paths/~1requests~1quote/post",
+        "old_selector": "2XX",
+        "new_selector": "200",
+        "statuses": [
+          200
+        ]
+      }
+    ]
+  }
+}

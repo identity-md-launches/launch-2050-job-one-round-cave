@@ -1,0 +1,16 @@
+{
+  "round": 34,
+  "command": ["python3", "-B", "gathering/check_gateplan_34.py"],
+  "expected_exit": 0,
+  "actual_exit": 0,
+  "passed": true,
+  "seed": 7373401,
+  "cases": 180,
+  "feasible": 44,
+  "infeasible": 136,
+  "maximum_tasks": 5,
+  "maximum_workers": 3,
+  "oracle": "All available start subsets at every integer minute",
+  "implementation": "Gateplan searches task-completion events",
+  "scope": "Seeded local feasibility and optimum-finish agreement; not a proof over all supported inputs"
+}

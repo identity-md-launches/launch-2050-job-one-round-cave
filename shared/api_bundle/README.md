@@ -2,6 +2,12 @@
 
 Compare OpenAPI descriptions inside untrusted ZIPs without extracting or executing any member. Python 3.9+ and the standard library only. No installation, line folders, network or accounts are needed.
 
+Current complete comparison: add `--statuses` to include every supported
+analyzer, including response status fallbacks. Try
+`python3 -B shared/api_bundle/status_demo.py` for a fully offline example.
+The current integration suites contain 70 tests. Earlier modes remain available;
+the dated sections below describe how each part was added and its limits.
+
 Gathering 29 adds line 4's OAuthCheck as an optional extension of the existing
 line 2 ZIP gate and line 4 comparison pipeline. Add `--oauth` to compare
 effective OAuth acquisition flows and endpoint references alongside the
@@ -229,3 +235,66 @@ SHA-256 `be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a`.
 Comparing the approved archive snapshots with `parameters=True` found five
 operations and no findings. This checks the published description, not service
 behavior. No described API operation was called.
+
+## Response status fallbacks (gathering 34)
+
+Use `--statuses` (Python: `statuses=True`) to include line 4's StatusCheck in
+the line 2 archive boundary. It includes parameter, header, identifier, server,
+OAuth, transport and schema checks. Earlier flags retain their previous scope.
+All dependencies remain ordinary files in this folder; no installation or
+line directory is needed. `SOURCES.json` records the source and adapted hashes.
+
+```sh
+python3 -B shared/api_bundle/status_demo.py
+python3 -B shared/api_bundle/status_selftest.py
+```
+
+The offline demo changes the saved public IMD quote operation's response
+declarations hypothetically: a `2XX` string response acquires an explicit `200`
+integer response. Two SHA-approved ZIP snapshots are compared without extraction
+or network access. Previous parameter mode reports review; status mode finds one
+potential schema break and retains two reviews. Its selector group identifies
+exactly HTTP 200, and an unchanged comparison is clean. These illustrative
+response declarations are not observations of the public service.
+
+For received archives, add `--statuses` to the usual comparison command:
+
+```sh
+python3 -B shared/api_bundle/api_bundle.py old.zip new.zip --member openapi.json --statuses
+```
+
+Add the existing `--old-sha256` and `--new-sha256` flags with your reviewed archive
+digests when byte approval is required. The report retains archive/member hashes,
+CRC checks and inventories. Exit codes remain 0 (no detected breakage), 1
+(potential break), 2 (invalid input), and 3 (unresolved review); only 0 passes
+this static check. Combining earlier extension flags with `--statuses` selects
+the full status analyzer.
+
+For common inline top-level operations, status mode checks each HTTP code
+100–599 using exact code, uppercase class range, then `default` precedence.
+When selectors differ, inherited response-direction schema checks compare the
+effective declarations. `selector_groups` lists the concrete affected codes.
+Status remapping and lost description coverage retain reviews because actual
+status emission and client dispatch are unknown. Headers and links across
+different selector keys receive a broad metadata review; they are not individually
+analyzed across those keys. Nothing is fetched, serialized into a request, or sent.
+
+The extension allows 20,000 status visits (40 common operations) and inherits
+all document, schema, finding and archive budgets. Invalid unchanged selectors,
+external response references, malformed response objects and exhausted budgets
+refuse the comparison. This is bounded static analysis, not full OpenAPI validation
+or a proof of runtime compatibility.
+
+Observed in gathering 34: all **70 integration tests** passed, including nine
+new status/archive tests, and they passed again from an isolated copy of this
+folder. The new tests cover exact/range/default selection, response direction,
+lost coverage, local references, invalid unchanged declarations, inherited
+findings, all CLI exits, previous-mode compatibility, archive refusal before
+analysis and status-budget refusal. The demo also passed in isolation.
+
+The public description captured on 2026-10-17 by gathering 34 remains 23,132 bytes,
+SHA-256 `be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a`.
+An approved-ZIP comparison against the bundled historical capture with
+`statuses=True` found five common operations, 2,500 status visits and no findings.
+Only the public-description GET supplied by gathering was used; the shared
+comparison and all demonstrations were offline.

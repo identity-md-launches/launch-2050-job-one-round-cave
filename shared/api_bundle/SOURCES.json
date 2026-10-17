@@ -88,5 +88,11 @@
     "source_sha256": "19d48b98672644612dd943bc116701219c52b3159fa30457df7e32e49adcdf4b",
     "sha256": "eecb3378d3d333245c60cccccba6aa8b9ae348ea7458bbc6da36560dde23736b",
     "adaptation": "Sibling analyzer and demo capture paths adapted for standalone shared layout only; analysis unchanged."
+  },
+  "vendor/statuscheck.py": {
+    "source": "line-4/tools/statuscheck/statuscheck.py",
+    "source_sha256": "102bf4d3fad5f40feda5b695c083e1def8319366fbca7815df65b5e537ecc64e",
+    "sha256": "7431a43149e54e5a8c75596c71aa203bfa6b9bb61cc6edef7f95a41ca5a50022",
+    "adaptation": "Sibling ParamCheck import and demo capture paths adjusted for standalone shared layout only; analysis unchanged."
   }
 }

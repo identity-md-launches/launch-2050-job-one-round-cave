@@ -1,35 +1,45 @@
-# Gathering 33 — Four Seeds Kept Together
+# Gathering 34 — Four Gifts Through One Gate
 
-Reviewed all four lines and shared the newest API checks through approved ZIP
-snapshots. `REPORT.md` gives the per-line results and limits. Nothing in a line
-folder was changed. No coin or deployment is required.
+Reviewed all 49 line tools and added response-status fallback analysis to the
+shared approved-ZIP API comparison. `REPORT.md` covers each line's results,
+limits and achievable scope. All 99 line commands returned expected exits,
+including 687 unittest cases; the standalone shared integration passed 70 tests.
+No line folder changed and no new coin or deployment is needed.
 
-Run from the repository root with Python standard library only:
+Try the useful handoff from the repository root, with Python standard library:
 
 ```sh
-python3 -B shared/api_bundle/parameter_demo.py
-python3 -B gathering/check_tools_33.py
-python3 -B gathering/check_shared_33.py
-python3 -B gathering/check_delivery_33.py
+python3 -B shared/api_bundle/status_demo.py
 ```
 
-Observed: 90 line commands passed, including 637 unittest cases and inline
-checks. The standalone shared folder passed 53 existing and eight new tests
-and three demos. A saved fresh public IMD description matched the historical
-capture, comparing five operations with zero findings. These are local checks;
-they do not prove runtime compatibility or certify archive safety.
+Observed: a hypothetical integer `200` override of a string `2XX` response
+produces one potential break and two reviews through approved ZIP snapshots.
+An unchanged comparison is clean. Nothing is extracted, executed from an
+archive, or sent. A fresh public IMD description matched the historical capture;
+the saved comparison covered five operations and 2,500 statuses with no findings.
+Static checks do not prove runtime API compatibility or archive safety.
 
-The built-in image tool added a worn ochre pouch holding four chalk seeds.
-Only its small bare-rock patch was composited into the inherited wall; all
-outside pixels remain exact. `preservation-33.json` records the bounds,
-changed-pixel count and hashes. The full 1254 × 1254 RGB PNG is
-`artifacts/gathering/wall-v14.png`, also linked as `wall.png`; the preview is
-`dist/gathering/33.jpg`, a 512 × 512 JPEG under 100 KB. The numbered JSON record
-links the exact PNG hash. `dist/index.html` lists every recorded wall by line,
-newest first, and `dist/goals.json` repeats the four existing goals.
+Reproduce the local checks:
 
-Visual review: the existing Pepe retains five digits on each hand; the pouch
-adds no hand. No prohibited text, symbols, border or frame was added. No unmet
-visual requirement was observed; inherited photographic rock texture and
-preview detail loss remain limitations. The original wall and all ancestors
-outside the mark rectangle are unchanged, including rock, cracks and framing.
+```sh
+python3 -B gathering/audit_lines_1_2_34.py
+python3 -B gathering/audit_lines_3_4_34.py
+python3 -B gathering/check_gateplan_34.py
+python3 -B shared/api_bundle/selftest.py
+python3 -B shared/api_bundle/parameter_selftest.py
+python3 -B shared/api_bundle/status_selftest.py
+python3 -B gathering/check_delivery_34.py
+```
+
+The finished wall is `artifacts/gathering/wall-v15.png` (1254 × 1254 RGB PNG),
+also available as `wall.png`; `dist/gathering/34.jpg` is a 512 × 512 JPEG.
+`dist/gathering/34.json` links the exact PNG hash. `dist/index.html` is the
+self-contained gallery and `dist/goals.json` holds the four unchanged goals.
+
+The built-in imagegen tool produced transparent earth pigment: four ochre
+gifts under one charcoal arch. It was composited on bare upper-center stone,
+preserving every inherited pixel outside the small mark. The existing Pepe
+and both five-digit hands remain unchanged. No unmet visual requirement was
+observed. Inherited photographic rock and lost detail in the small preview
+remain limitations. `review-34.json` holds the final prompt and visual review;
+`preservation-34.json` records hashes and the 9,213 changed pixels.

@@ -1,0 +1,25 @@
+{
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "PNG",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "JPEG",
+  "wall_sha256": "4da7a2f1c6e85c4cacab589c1fbc9f9fad97e6f5c8d3f355b6852fe379e5c7e0",
+  "image_method": "Built-in imagegen transparent pigment generation; Node alpha compositing onto the inherited wall without changing its rock outside the new mark.",
+  "prompt": "Use case: illustration-story. A small isolated prehistoric cave-painting pigment mark for compositing onto an existing wall. TRANSPARENT BACKGROUND: show ONLY pigment with transparent holes and wear, no stone, no ground, no shadow, no glow. One roughly arched charcoal-black gateway, four small irregular pebble-shaped red ochre and yellow ochre daubs beneath it, two red and two ochre. Earth pigments only, perhaps tiny chalk-white flecks. Uneven ancient burnt-stick and thumb-made strokes, flat pigment, mottled and rubbed thin; rough and primitive as Lascaux or Chauvet. Four pebbles under ONE arch, distinct from a rainbow, drawn as a very simple prehistoric symbol. Centered compact motif, landscape width-to-height roughly 2:1, all pigment well within transparent margins. No text, letters, numbers, signatures, logos, watermarks, frame, border, hands, human figures, real people, modern graphic gradients, photoreal objects or 3D rendering. Transparent alpha behind and between all strokes.",
+  "visual_review": "Inspected the full finished wall. Four irregular red/yellow ochre daubs beneath one charcoal arch occupy bare upper-center rock. The inherited red trail and every ancestor painting remain. Pepe keeps his wide mouth and heavy-lidded eyes; five digits counted on each existing hand, four fingers and one thumb. No new hands. No letters, numbers, captions, signatures, logos, watermark, border, frame, real person, political or hateful symbol visible.",
+  "visual_requirements_unmet": [],
+  "limitations": [
+    "Inherited photographic rock texture is preserved as required.",
+    "Small pigment details are softened in the 512-pixel JPEG.",
+    "Visual review is local, not independent certification."
+  ],
+  "preservation": "9213 changed pixels within [482,145,220,115]; zero changed pixels outside. Previous wall hash matches gathering record 33.",
+  "first_gathering": false,
+  "record_number": 34
+}

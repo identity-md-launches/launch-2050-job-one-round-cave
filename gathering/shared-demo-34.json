@@ -1,0 +1,94 @@
+{
+  "baseline_source": "https://api.imd.fun/openapi.json",
+  "baseline_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+  "trial": "Hypothetical 200 integer override of a 2XX string response on a saved IMD path.",
+  "network_used": false,
+  "files_extracted": 0,
+  "previous_status": "review_required",
+  "unchanged_status": "no_detected_breakage",
+  "changed": {
+    "schema": "apidelta-report-v1",
+    "perspective": "existing clients upgrading to the new description",
+    "status": "breaking",
+    "counts": {
+      "breaking": 1,
+      "review": 2,
+      "info": 0
+    },
+    "operations_compared": 5,
+    "findings": [
+      {
+        "severity": "review",
+        "code": "response_selector_changed",
+        "location": "/paths/~1requests~1quote/post/responses/200",
+        "message": "Effective response selector changed from 2XX to 200 for 1 HTTP statuses (first 200). See selector_groups for the exact set; runtime emission is unknown."
+      },
+      {
+        "severity": "review",
+        "code": "response_status_changed",
+        "location": "/paths/~1requests~1quote/post/responses/200",
+        "message": "Response status was added or removed; review client control flow."
+      },
+      {
+        "severity": "breaking",
+        "code": "schema_type_incompatible",
+        "location": "/paths/~1requests~1quote/post/responses/200/content/application~1json/schema/type",
+        "message": "Response can produce types old clients did not expect."
+      }
+    ],
+    "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+    "extension": "statuscheck-v1 (includes paramcheck and earlier analyzers)",
+    "status_visits": 2500,
+    "selector_groups": [
+      {
+        "operation": "/paths/~1requests~1quote/post",
+        "old_selector": "2XX",
+        "new_selector": "200",
+        "statuses": [
+          200
+        ]
+      }
+    ],
+    "status_scope": "100..599; common inline top-level operations; exact > class > default",
+    "bundle_inputs": {
+      "old": {
+        "archive_sha256": "cb339f7af9972c28be23b12dd2352a17ec547c5f94390f50ac81f368d2fe1228",
+        "approved_sha256_checked": true,
+        "preflight": {
+          "entries": 1,
+          "directory_bytes": 63,
+          "zip64": false
+        },
+        "member": "docs/openapi.json",
+        "member_sha256": "dab31af92f459a14645292b9753bc0f7cbd7c82f0f8f2712d9bcf6885f495320",
+        "checked_files": [
+          {
+            "path": "docs/openapi.json",
+            "bytes": 22326,
+            "sha256": "dab31af92f459a14645292b9753bc0f7cbd7c82f0f8f2712d9bcf6885f495320"
+          }
+        ],
+        "all_payloads_crc_checked": true
+      },
+      "new": {
+        "archive_sha256": "820256dd32afa8e8234c13ed74edaf2c11cd603ce965d9b7b275adb1924067c5",
+        "approved_sha256_checked": true,
+        "preflight": {
+          "entries": 1,
+          "directory_bytes": 63,
+          "zip64": false
+        },
+        "member": "docs/openapi.json",
+        "member_sha256": "b41315cbbdc6ae2ce5b19d62a1be50261b34e37d5e7ad3c36fc845e7c6c8ffe1",
+        "checked_files": [
+          {
+            "path": "docs/openapi.json",
+            "bytes": 22441,
+            "sha256": "b41315cbbdc6ae2ce5b19d62a1be50261b34e37d5e7ad3c36fc845e7c6c8ffe1"
+          }
+        ],
+        "all_payloads_crc_checked": true
+      }
+    }
+  }
+}
